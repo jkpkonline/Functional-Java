@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    include: native, default
+  cloud:
+    config:
+      discovery:
+        enable: false
+      server:
+        native:
+          searchLocations: c:/jk/config
+        encrypt:
+          enable: false
+server:
+  port: 8888
